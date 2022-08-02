@@ -25,7 +25,9 @@
             <li class="current dropdown"><a href="/home/">Home</a>
 
                 <ul>
-
+                    {% for links in site.data.menulinks.links2 %}
+                    <li><a href="/home/">Home Page 01</a></li>
+                    {% endfor %}
                     <li><a href="/home/">Home Page 01</a></li>
 
                     <li><a href="/home2/">Home Page 02</a></li>
