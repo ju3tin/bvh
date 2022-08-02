@@ -33,11 +33,10 @@
 
                         <ul>
 
-                            <li><a href="/home/">Header Style 01</a></li>
-
-                            <li><a href="/home2/">Header Style 02</a></li>
-
-                            <li><a href="/home3/">Header Style 03</a></li>
+                            {% for links in site.data.menulinks.links3 %}
+                            <li><a href="{{ links.url }}">{{ links.title }}</a></li>
+                            {% endfor %}
+                            
 
                         </ul>
 

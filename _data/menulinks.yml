@@ -28,5 +28,15 @@ links2:
   num: 2
   url: /home/
 - title: Home Page 03
+  num: 3
+  url: /home/
+links3:
+- title: Home Style 01
+  num: 1
+  url: /home/
+- title: Home Style 02
   num: 2
+  url: /home/
+- title: Home Style 03
+  num: 3
   url: /home/
