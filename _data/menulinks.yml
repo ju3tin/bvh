@@ -1,22 +1,22 @@
 links:
 - title: Home
-  date: Oct 4, 2017
+  num: 1
   url: /home/
 - title: About
-  date: Sep 19, 2017
+  num: 2
   url: /about/
 - title: Trainers
-  date: Aug 23, 2017
+  num: 3
   url: /trainers/
 - title: Classes
-  date: Aug 23, 2017
+  num: 4
   url: /classes/
 - title: Schedules
-  date: Aug 23, 2017
+  num: 5
   url: /schedules/
 - title: News
-  date: Aug 23, 2017
+  num: 6
   url: /blog/
 - title: Contact
-  date: Aug 23, 2017
+  num: 7
   url: /contact/

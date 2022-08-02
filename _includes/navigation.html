@@ -11,7 +11,14 @@
     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-lg-5">
         {% for links in site.data.menulinks.links %}
         <li class="nav-item">
+            {% if links.num == page.linknum %}
+            <a class="nav-link active" href="{{ links.url }}">
+            
+            {% else %}
             <a class="nav-link" href="{{ links.url }}">
+            {% endif %}
+
+           
                 {{ links.title }}
             </a>
         </li>
