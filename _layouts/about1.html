@@ -3,59 +3,7 @@
 
 <html>
 
-<head>
-
-<meta charset="utf-8">
-
-<title>Gym HTML-5 Template | About Us</title>
-
-<!-- Stylesheets -->
-
-<link href="css/bootstrap.css" rel="stylesheet">
-
-
-
-<link href="css/style.css" rel="stylesheet">
-
-<link href="css/responsive.css" rel="stylesheet">
-
-
-
-<!-- Color Switcher Mockup -->
-
-<link href="css/color-switcher-design.css" rel="stylesheet">
-
-
-
-<!-- Color Themes -->
-
-<link id="theme-color-file" href="css/color-themes/default-theme.css" rel="stylesheet">
-
-
-
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-
-
-
-<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-
-<link rel="icon" href="images/favicon.png" type="image/x-icon">
-
-
-
-<!-- Responsive -->
-
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-
-
-
-<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-
-<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
-
-</head>
+    {% include head2.html %}
 
 
 
@@ -157,7 +105,7 @@
 
 				<div class="pull-left logo-box">
 
-					<div class="logo"><a href="index.html"><img src="images/logo.png" alt="" title=""></a></div>
+					<div class="logo"><a href="index.html"><img src="/images/logo.png" alt="" title=""></a></div>
 
 				</div>
 
@@ -171,143 +119,7 @@
 
 					<!-- Main Menu -->
 
-					<nav class="main-menu navbar-expand-md">
-
-						<div class="navbar-header">
-
-							<!-- Toggle Button -->    	
-
-							<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-
-								<span class="icon-bar"></span>
-
-								<span class="icon-bar"></span>
-
-								<span class="icon-bar"></span>
-
-							</button>
-
-						</div>
-
-						
-
-						<div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
-
-							<ul class="navigation clearfix">
-
-								<li class="dropdown"><a href="#">Home</a>
-
-									<ul>
-
-										<li><a href="index.html">Home Page 01</a></li>
-
-										<li><a href="index-2.html">Home Page 02</a></li>
-
-										<li><a href="index-3.html">Home Page 03</a></li>
-
-										<li class="dropdown"><a href="#">Header Styles</a>
-
-											<ul>
-
-												<li><a href="index.html">Header Style 01</a></li>
-
-												<li><a href="index-2.html">Header Style 02</a></li>
-
-												<li><a href="index-3.html">Header Style 03</a></li>
-
-											</ul>
-
-										</li>
-
-									</ul>
-
-								</li>
-
-								<li class="current dropdown"><a href="#">About</a>
-
-									<ul>
-
-										<li><a href="about.html">About Us</a></li>
-
-										<li><a href="faq.html">Faq</a></li>
-
-										<li><a href="price.html">Price</a></li>
-
-										<li><a href="team.html">Team</a></li>
-
-										<li><a href="time-table.html">Time Table</a></li>
-
-										<li><a href="testimonial.html">Testimonial</a></li>
-
-										<li><a href="comming-soon.html">Comming Soon</a></li>
-
-									</ul>
-
-								</li>
-
-								<li class="dropdown"><a href="#">Classes</a>
-
-									<ul>
-
-										<li><a href="classes.html">Classes</a></li>
-
-										<li><a href="classes-detail.html">Classes Detail</a></li>
-
-									</ul>
-
-								</li>
-
-								<li class="dropdown"><a href="#">Portfolio</a>
-
-									<ul>
-
-										<li><a href="portfolio.html">Portfolio</a></li>
-
-										<li><a href="portfolio-detail.html">Portfolio Detail</a></li>
-
-									</ul>
-
-								</li>
-
-								<li class="dropdown"><a href="#">Shop</a>
-
-									<ul>
-
-										<li><a href="shop.html">Our Products</a></li>
-
-										<li><a href="shop-single.html">Product Single</a></li>
-
-										<li><a href="shopping-cart.html">Shopping Cart</a></li>
-
-										<li><a href="checkout.html">Checkout</a></li>
-
-										<li><a href="account.html">Account</a></li>
-
-									</ul>
-
-								</li>
-
-								<li class="dropdown"><a href="#">Blog</a>
-
-									<ul>
-
-										<li><a href="blog.html">Our Blog</a></li>
-
-										<li><a href="blog-single.html">Blog Single</a></li>
-
-										<li><a href="not-found.html">Not Found</a></li>
-
-									</ul>
-
-								</li>
-
-								<li><a href="contact.html">Contact us</a></li>
-
-							</ul>
-
-						</div>
-
-					</nav>
+                    {% include nav3.html %}
 
 					
 
@@ -333,7 +145,7 @@
 
                 <div class="logo pull-left">
 
-                    <a href="index.html" title=""><img src="images/logo-small.png" alt="" title=""></a>
+                    <a href="index.html" title=""><img src="/images/logo-small.png" alt="" title=""></a>
 
                 </div>
 
@@ -371,7 +183,7 @@
 
             <nav class="menu-box">
 
-                <div class="nav-logo"><a href="index.html"><img src="images/logo-2.png" alt="" title=""></a></div>
+                <div class="nav-logo"><a href="index.html"><img src="/images/logo-2.png" alt="" title=""></a></div>
 
                 <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
 
@@ -391,7 +203,7 @@
 
 	<!--Page Title-->
 
-    <section class="page-title" style="background-image:url(images/background/11.jpg)">
+    <section class="page-title" style="background-image:url(/images/background/11.jpg)">
 
     	<div class="auto-container">
 
@@ -505,11 +317,11 @@
 
 					<div class="inner-column wow fadeInRight" data-wow-delay="0ms" data-wow-duration="1500ms">
 
-						<div class="award"><img src="images/resource/award.png" alt="" /></div>
+						<div class="award"><img src="/images/resource/award.png" alt="" /></div>
 
 						<div class="image">
 
-							<img src="images/resource/about-1.png" alt="" />
+							<img src="/images/resource/about-1.png" alt="" />
 
 						</div>
 
@@ -533,7 +345,7 @@
 
 	<section class="services-section-two">
 
-		<div class="image-layer" style="background-image:url(images/background/8.jpg)"></div>
+		<div class="image-layer" style="background-image:url(/images/background/8.jpg)"></div>
 
 		<div class="auto-container">
 
@@ -641,9 +453,9 @@
 
 			<div class="inner-container">
 
-				<div class="pattern-layer" style="background-image:url(images/background/7.jpg)"></div>
+				<div class="pattern-layer" style="background-image:url(/images/background/7.jpg)"></div>
 
-				<div class="section-image" style="background-image:url(images/resource/newslatter.png)"></div>
+				<div class="section-image" style="background-image:url(/images/resource/newslatter.png)"></div>
 
 				<div class="clearfix">
 
@@ -719,7 +531,7 @@
 
 	<section class="benefits-section">
 
-		<div class="side-image" style="background-image:url(images/resource/benefit-5.png)"></div>
+		<div class="side-image" style="background-image:url(/images/resource/benefit-5.png)"></div>
 
 		<div class="auto-container">
 
@@ -807,35 +619,35 @@
 
 				<!-- Images Column -->
 
-				<div class="images-column col-lg-6 col-md-12 col-sm-12">
+				<div class="/images-column col-lg-6 col-md-12 col-sm-12">
 
-					<div class="pattern-layer" style="background-image:url(images/background/pattern-5.png)"></div>
+					<div class="pattern-layer" style="background-image:url(/images/background/pattern-5.png)"></div>
 
-					<div class="pattern-layer-two" style="background-image:url(images/background/pattern-6.png)"></div>
+					<div class="pattern-layer-two" style="background-image:url(/images/background/pattern-6.png)"></div>
 
 					<div class="inner-column">
 
 						<div class="image">
 
-							<img src="images/resource/benefit-1.jpg" alt="" />
+							<img src="/images/resource/benefit-1.jpg" alt="" />
 
 						</div>
 
 						<div class="image-one">
 
-							<img src="images/resource/benefit-2.jpg" alt="" />
+							<img src="/images/resource/benefit-2.jpg" alt="" />
 
 						</div>
 
 						<div class="image-two">
 
-							<img src="images/resource/benefit-3.jpg" alt="" />
+							<img src="/images/resource/benefit-3.jpg" alt="" />
 
 						</div>
 
 						<div class="image-three">
 
-							<img src="images/resource/benefit-4.jpg" alt="" />
+							<img src="/images/resource/benefit-4.jpg" alt="" />
 
 						</div>
 
@@ -875,7 +687,7 @@
 
 				<div class="left-column">
 
-					<div class="pattern-image" style="background-image:url(images/background/pattern-7.png)"></div>
+					<div class="pattern-image" style="background-image:url(/images/background/pattern-7.png)"></div>
 
 					<div class="inner-column">
 
@@ -977,7 +789,7 @@
 
 					<div class="inner-column">
 
-						<div class="image-layer" style="background-image:url(images/background/9.jpg)"></div>
+						<div class="image-layer" style="background-image:url(/images/background/9.jpg)"></div>
 
 						<!-- Sec Title -->
 
@@ -1255,7 +1067,7 @@
 
 				<!-- Images Column -->
 
-				<div class="images-column col-lg-6 col-md-12 col-sm-12">
+				<div class="/images-column col-lg-6 col-md-12 col-sm-12">
 
 					<div class="inner-column">
 
@@ -1285,13 +1097,13 @@
 
 						<div class="image">
 
-							<img src="images/resource/choose-1.jpg" alt="" />
+							<img src="/images/resource/choose-1.jpg" alt="" />
 
 						</div>
 
 						<div class="image-1">
 
-							<img src="images/resource/choose-2.jpg" alt="" />
+							<img src="/images/resource/choose-2.jpg" alt="" />
 
 						</div>
 
@@ -1403,21 +1215,21 @@
 
                 <ul class="sponsors-carousel owl-carousel owl-theme">
 
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/1.png" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="/images/clients/1.png" alt=""></a></figure></li>
 
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/2.png" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="/images/clients/2.png" alt=""></a></figure></li>
 
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/3.png" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="/images/clients/3.png" alt=""></a></figure></li>
 
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/4.png" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="/images/clients/4.png" alt=""></a></figure></li>
 
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/5.png" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="/images/clients/5.png" alt=""></a></figure></li>
 
-					<li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/1.png" alt=""></a></figure></li>
+					<li class="slide-item"><figure class="image-box"><a href="#"><img src="/images/clients/1.png" alt=""></a></figure></li>
 
-					<li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/2.png" alt=""></a></figure></li>
+					<li class="slide-item"><figure class="image-box"><a href="#"><img src="/images/clients/2.png" alt=""></a></figure></li>
 
-					<li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/3.png" alt=""></a></figure></li>
+					<li class="slide-item"><figure class="image-box"><a href="#"><img src="/images/clients/3.png" alt=""></a></figure></li>
 
                 </ul>
 
@@ -1435,7 +1247,7 @@
 
 	<!-- Main Footer -->
 
-    <footer class="main-footer" style="background-image:url(images/background/2.jpg)">
+    <footer class="main-footer" style="background-image:url(/images/background/2.jpg)">
 
 		<div class="auto-container">
 
@@ -1463,7 +1275,7 @@
 
 									<div class="logo">
 
-                                    	<a href="index.html"><img src="images/footer-logo.png" alt="" /></a>
+                                    	<a href="index.html"><img src="/images/footer-logo.png" alt="" /></a>
 
                                     </div>
 
@@ -1503,7 +1315,7 @@
 
 										<div class="post">
 
-											<div class="thumb"><a href="blog-single.html"><img src="images/resource/post-thumb-3.jpg" alt=""></a></div>
+											<div class="thumb"><a href="blog-single.html"><img src="/images/resource/post-thumb-3.jpg" alt=""></a></div>
 
 											<h5><a href="blog-single.html">Your Future is Created by What You Do Today</a></h5>
 
@@ -1515,7 +1327,7 @@
 
 										<div class="post">
 
-											<div class="thumb"><a href="blog-single.html"><img src="images/resource/post-thumb-4.jpg" alt=""></a></div>
+											<div class="thumb"><a href="blog-single.html"><img src="/images/resource/post-thumb-4.jpg" alt=""></a></div>
 
 											<h5><a href="blog-single.html">How to Maximise Time Spent at The GYM.</a></h5>
 
@@ -1661,7 +1473,7 @@
 
 							<div class="logo">
 
-								<a href="index.html"><img src="images/logo.png" alt="" /></a>
+								<a href="index.html"><img src="/images/logo.png" alt="" /></a>
 
 							</div>
 
@@ -1827,42 +1639,7 @@
 
 <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-arrow-up"></span></div>
 
-
-
-<script src="js/jquery.js"></script>
-
-
-
-<script src="js/popper.min.js"></script>
-
-<script src="js/bootstrap.min.js"></script>
-
-<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-
-<script src="js/jquery.fancybox.js"></script>
-
-<script src="js/appear.js"></script>
-
-<script src="js/parallax.min.js"></script>
-
-<script src="js/tilt.jquery.min.js"></script>
-
-<script src="js/jquery.paroller.min.js"></script>
-
-<script src="js/owl.js"></script>
-
-<script src="js/wow.js"></script>
-
-<script src="js/nav-tool.js"></script>
-
-<script src="js/jquery-ui.js"></script>
-
-<script src="js/script.js"></script>
-
-<script src="js/color-settings.js"></script>
-
-
-
+{% include scripts2.html %}
 
 </body>
 
