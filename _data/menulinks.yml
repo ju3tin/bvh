@@ -46,19 +46,19 @@ links4:
   url: /about1/
 - title: Faq
   num: 2
-  url: /home/
+  url: /faq/
 - title: Price
   num: 3
-  url: /home/
+  url: /price/
 - title: Team
   num: 3
-  url: /home/
+  url: /team/
 - title: Time Table
   num: 3
-  url: /home/
+  url: /time-table/
 - title: Testimonial
   num: 3
-  url: /home/
+  url: /testimonial/
 - title: Comming Soon
   num: 3
-  url: /home/
+  url: /comming-soon/
