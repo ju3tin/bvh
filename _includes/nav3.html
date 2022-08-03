@@ -71,10 +71,9 @@
 
                 <ul>
 
-                    <li><a href="/portfolio/">Portfolio</a></li>
-
-                    <li><a href="/portfoliodetail/">Portfolio Detail</a></li>
-
+                    {% for links in site.data.menulinks.links6 %}
+                    <li><a href="{{ links.url }}">{{ links.title }}</a></li>
+                    {% endfor %}
                 </ul>
 
             </li>
