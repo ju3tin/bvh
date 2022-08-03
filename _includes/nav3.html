@@ -94,18 +94,20 @@
 
                 <ul>
 
-                    <li><a href="/blog1/">Our Blog</a></li>
-
-                    <li><a href="/blogsingle/">Blog Single</a></li>
-
-                    <li><a href="/notfound/">Not Found</a></li>
+                    {% for links in site.data.menulinks.links8 %}
+                    <li><a href="{{ links.url }}">{{ links.title }}</a></li>
+                    {% endfor %}
+                    
 
                 </ul>
 
             </li>
 
-            <li><a href="/contact1/">Contact us</a></li>
-
+          
+            {% for links in site.data.menulinks.links9 %}
+            <li><a href="{{ links.url }}">{{ links.title }}</a></li>
+            {% endfor %}
+            
         </ul>
 
     </div>

@@ -93,12 +93,16 @@ links7:
   num: 3
   url: /account/
 links8:
-- title: Our Products
+- title: Our Blog
   num: 3
-  url: /shop/
-- title: Product Single
+  url: /blog1/
+- title: Blog Single
   num: 3
-  url: /shopsingle/
-- title: Shopping Cart
+  url: /blogsingle/
+- title: Not Found
   num: 3
-  url: /shoppingcart/
+  url: /notfound/
+links9:
+- title: Contact us
+  num: 3
+  url: /contact1/
