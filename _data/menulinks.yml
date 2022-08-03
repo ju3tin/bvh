@@ -92,3 +92,13 @@ links7:
 - title: Account
   num: 3
   url: /account/
+links8:
+- title: Our Products
+  num: 3
+  url: /shop/
+- title: Product Single
+  num: 3
+  url: /shopsingle/
+- title: Shopping Cart
+  num: 3
+  url: /shoppingcart/
