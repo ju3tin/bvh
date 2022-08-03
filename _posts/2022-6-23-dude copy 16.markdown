@@ -1,5 +1,5 @@
 ---
-layout: checkout
+layout: checkout1
 title:  "Welcome to Jekyll!"
 date:   2022-07-30 10:53:45 +0100
 permalink: /checkout/
