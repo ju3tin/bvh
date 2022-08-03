@@ -72,7 +72,23 @@ links5:
 links6:
 - title: Portfolio
   num: 3
-  url: /comming-soon/
+  url: /portfolio/
 - title: Portfolio Detail
   num: 3
-  url: /comming-soon/
+  url: /portfoliodetail/
+links7:
+- title: Our Products
+  num: 3
+  url: /shop/
+- title: Product Single
+  num: 3
+  url: /shopsingle/
+- title: Shopping Cart
+  num: 3
+  url: /shoppingcart/
+- title: Checkout
+  num: 3
+  url: /checkout/
+- title: Account
+  num: 3
+  url: /account/
