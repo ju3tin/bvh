@@ -2,20 +2,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Fito - Fitness Bootstrap Admin Dashboard</title>
-    <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon.png">
-	<link rel="stylesheet" href="/chartist/css/chartist.min.css">
-    <link href="/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
-    <link href="/css/style1.css" rel="stylesheet">
-	<link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
-	<link href="/owl-carousel/owl.carousel.css" rel="stylesheet">
-
-</head>
+{% include head3.html %}
 <body>
 
     <!--*******************
@@ -1496,22 +1483,8 @@
         Scripts
     ***********************************-->
     <!-- Required vendors -->
-    <script src="/global/global.min.js"></script>
-	<script src="/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
-	<script src="/chart.js/Chart.bundle.min.js"></script>
-    <script src="/js/custom.min.js"></script>
-	<script src="/js/deznav-init.js"></script>
-	<script src="/owl-carousel/owl.carousel.js"></script>
-		
-	
-	<!-- Chart piety plugin files -->
-    <script src="/peity/jquery.peity.min.js"></script>
-	
-	<!-- Apex Chart -->
-	<script src="/apexchart/apexchart.js"></script>
-	
-	<!-- Dashboard 1 -->
-	<script src="/js/dashboard/dashboard-1.js"></script>
+
+	{% include scripts4.html %}
 	<script>
 		function featuredmenus()
 		{
