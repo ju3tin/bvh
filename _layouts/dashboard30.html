@@ -1,6 +1,5 @@
 
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
@@ -571,7 +570,7 @@
                     <div class="collapse navbar-collapse justify-content-between">
                         <div class="header-left">
                             <div class="dashboard_bar">
-                                Ui Accordion
+                                Ui Modal
                             </div>
                         </div>
 
@@ -933,606 +932,236 @@
         <!--**********************************
             Content body start
         ***********************************-->
-        <div class="content-body">
-            <!-- container starts -->
+<div class="content-body">
             <div class="container-fluid">
                 <div class="page-titles">
 					<ol class="breadcrumb">
 						<li class="breadcrumb-item"><a href="javascript:void(0)">Bootstrap</a></li>
-						<li class="breadcrumb-item active"><a href="javascript:void(0)">Accordion</a></li>
+						<li class="breadcrumb-item active"><a href="javascript:void(0)">Modal</a></li>
 					</ol>
                 </div>
                 <!-- row -->
-                <!-- Row starts -->
                 <div class="row">
-                    <!-- Column starts -->
-                    <div class="col-xl-6">
+                    <div class="col-12">
                         <div class="card">
-                            <div class="card-header d-block">
-                                <h4 class="card-title">Default Accordion</h4>
-                                <p class="m-0 subtitle">Default accordion. Add <code>accordion</code> class in root</p>
+                            <div class="card-header">
+                                <h4 class="card-title">Bootstrap Modal</h4>
                             </div>
                             <div class="card-body">
-                                <!-- Default accordion -->
-                                <div id="accordion-one" class="accordion accordion-primary">
-                                    <div class="accordion__item">
-                                        <div class="accordion__header rounded-lg" data-toggle="collapse" data-target="#default_collapseOne">
-                                            <span class="accordion__header--text">Accordion Header One</span>
-                                            <span class="accordion__header--indicator"></span>
-                                        </div>
-                                        <div id="default_collapseOne" class="collapse accordion__body show" data-parent="#accordion-one">
-                                            <div class="accordion__body--text">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A, minima! Eligendi minima illum itaque harum aliquam vel, sunt magni dolorem! Cum quaerat est cupiditate saepe quidem, fugiat in at magni ad provident distinctio
+                                    eum tempore laboriosam adipisci, tempora cumque ex quis unde voluptatem consequuntur. Excepturi quibusdam accusamus deleniti officiis ullam repellendus magni unde? Saepe quibusdam vel, ipsum numquam ratione tempore.
+                                    Dolor optio aliquid in velit eaque, sed delectus reprehenderit quam quidem a eum id nostrum ullam obcaecati error deleniti modi quasi harum possimus voluptatum repellat saepe! Omnis dolor maiores eaque deserunt exercitationem
+                                    incidunt autem et voluptatibus molestias quod explicabo ipsam nam vitae a architecto, consectetur quas facilis sed nulla, placeat eum ex, ducimus in. Hic quo necessitatibus autem tempora provident!</p>
+                                <div class="bootstrap-modal">
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#basicModal">Basic modal</button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="basicModal">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title">Modal title</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"><span>&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">Modal body text goes here.</div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-danger light" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="accordion__item">
-                                        <div class="accordion__header collapsed rounded-lg" data-toggle="collapse" data-target="#default_collapseTwo">
-                                            <span class="accordion__header--text">Accordion Header Two</span>
-                                            <span class="accordion__header--indicator"></span>
-                                        </div>
-                                        <div id="default_collapseTwo" class="collapse accordion__body" data-parent="#accordion-one">
-                                            <div class="accordion__body--text">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#exampleModalLong">Long content Modal</button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModalLong">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title">Modal title</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"><span>&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                                                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                                                    <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+                                                    </p>
+                                                    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                                                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                                                    <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+                                                    </p>
+                                                    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                                                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                                                    <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+                                                    </p>
+                                                    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                                                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                                                    <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+                                                    </p>
+                                                    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                                                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                                                    <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+                                                    </p>
+                                                    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                                                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
+                                                    <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.
+                                                    </p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-danger light" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="accordion__item">
-                                        <div class="accordion__header collapsed rounded-lg" data-toggle="collapse" data-target="#default_collapseThree">
-                                            <span class="accordion__header--text">Accordion Header Three</span>
-                                            <span class="accordion__header--indicator"></span>
-                                        </div>
-                                        <div id="default_collapseThree" class="collapse accordion__body" data-parent="#accordion-one">
-                                            <div class="accordion__body--text">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#exampleModalCenter">Modal centered</button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModalCenter">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title">Modal title</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"><span>&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-danger light" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
+
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#exampleModalpopover">Modal with tooltip</button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModalpopover">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title">Modal title</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"><span>&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <h5>Popover in a modal</h5>
+                                                    <p>This <a href="#" role="button" data-container="body" data-toggle="popover" class="btn btn-secondary popover-test" title="Popover title" data-content="Popover body content is set in this attribute.">button</a>                                                        triggers a popover on click.</p>
+                                                    <hr>
+                                                    <h5>Tooltips in a modal</h5>
+                                                    <p><a href="#" class="tooltip-test text-primary" data-toggle="tooltip" title="Told you!">This link</a> and <a href="#" class="tooltip-test text-primary" data-toggle="tooltip" title="Another one!">that link</a>                                                        have tooltips on hover.</p>
+
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-danger light" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Button trigger modal -->
+                                    <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target="#modalGrid">Grid Inside Modal</button>
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="modalGrid">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title">Modal title</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"><span>&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col-md-4">.col-md-4</div>
+                                                            <div class="col-md-4 ml-auto">.col-md-4 .ml-auto</div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-3 ml-auto">.col-md-3 .ml-auto</div>
+                                                            <div class="col-md-2 ml-auto">.col-md-2 .ml-auto</div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-6 ml-auto">.col-md-6 .ml-auto</div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-sm-9">Level 1: .col-sm-9
+                                                                <div class="row">
+                                                                    <div class="col-8 col-sm-6">Level 2: .col-8 .col-sm-6
+                                                                    </div>
+                                                                    <div class="col-4 col-sm-6">Level 2: .col-4 .col-sm-6
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-danger light" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Large modal -->
+                                    <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".bd-example-modal-lg">Large modal</button>
+                                    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-hidden="true">
+                                        <div class="modal-dialog modal-lg">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title">Modal title</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"><span>&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">Modal body text goes here.</div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-danger light" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- Small modal -->
+                                    <button type="button" class="btn btn-primary mb-2" data-toggle="modal" data-target=".bd-example-modal-sm">Small modal</button>
+                                    <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-hidden="true">
+                                        <div class="modal-dialog modal-sm">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title">Modal title</h5>
+                                                    <button type="button" class="close" data-dismiss="modal"><span>&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">Modal body text goes here.</div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-danger light" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- Column ends -->
-                    <!-- Column starts -->
-                    <div class="col-xl-6">
-                        <div class="card">
-                            <div class="card-header d-block">
-                                <h4 class="card-title">Accordion bordered</h4>
-                                <p class="m-0 subtitle">Accordion with border. Add class <code>accordion-bordered</code> with the class <code> accordion</code></p>
-                            </div>
-                            <div class="card-body">
-                                <div id="accordion-two" class="accordion accordion-danger-solid">
-                                    <div class="accordion__item">
-                                        <div class="accordion__header" data-toggle="collapse" data-target="#bordered_collapseOne"> <span class="accordion__header--text">Accordion Header One</span>
-                                            <span class="accordion__header--indicator"></span>
-                                        </div>
-                                        <div id="bordered_collapseOne" class="collapse accordion__body show" data-parent="#accordion-two">
-                                            <div class="accordion__body--text">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion__item">
-                                        <div class="accordion__header collapsed" data-toggle="collapse" data-target="#bordered_collapseTwo"> <span class="accordion__header--text">Accordion Header Two</span>
-                                            <span class="accordion__header--indicator"></span>
-                                        </div>
-                                        <div id="bordered_collapseTwo" class="collapse accordion__body" data-parent="#accordion-two">
-                                            <div class="accordion__body--text">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion__item">
-                                        <div class="accordion__header collapsed" data-toggle="collapse" data-target="#bordered_collapseThree"> <span class="accordion__header--text">Accordion Header Three</span>
-                                            <span class="accordion__header--indicator"></span>
-                                        </div>
-                                        <div id="bordered_collapseThree" class="collapse accordion__body" data-parent="#accordion-two">
-                                            <div class="accordion__body--text">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Column ends -->
-                    <!-- Column starts -->
-                    <div class="col-xl-6">
-                        <div class="card">
-                            <div class="card-header d-block">
-                                <h4 class="card-title">Accordion without space</h4>
-                                <p class="m-0 subtitle">Add <code>accordion-no-gutter</code> class with <code>accordion</code></p>
-                            </div>
-                            <div class="card-body">
-                                <div id="accordion-three" class="accordion accordion-no-gutter accordion-header-bg">
-                                    <div class="accordion__item">
-                                        <div class="accordion__header" data-toggle="collapse" data-target="#no-gutter_collapseOne">
-                                            <span class="accordion__header--text">Accordion Header One</span>
-                                            <span class="accordion__header--indicator"></span>
-                                        </div>
-                                        <div id="no-gutter_collapseOne" class="collapse accordion__body show" data-parent="#accordion-three">
-                                            <div class="accordion__body--text">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion__item">
-                                        <div class="accordion__header collapsed" data-toggle="collapse" data-target="#no-gutter_collapseTwo">
-                                            <span class="accordion__header--text">Accordion Header Two</span>
-                                            <span class="accordion__header--indicator"></span>
-                                        </div>
-                                        <div id="no-gutter_collapseTwo" class="collapse accordion__body" data-parent="#accordion-three">
-                                            <div class="accordion__body--text">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion__item">
-                                        <div class="accordion__header collapsed" data-toggle="collapse" data-target="#no-gutter_collapseThree">
-                                            <span class="accordion__header--text">Accordion Header Three</span>
-                                            <span class="accordion__header--indicator"></span>
-                                        </div>
-                                        <div id="no-gutter_collapseThree" class="collapse accordion__body" data-parent="#accordion-three">
-                                            <div class="accordion__body--text">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Column ends -->
-                    <!-- Column starts -->
-                    <div class="col-xl-6">
-                        <div class="card">
-                            <div class="card-header d-block">
-                                <h4 class="card-title">Accordion without space with border</h4>
-                                <p class="m-0 subtitle">Add <code>accordion-no-gutter accordion-bordered</code> class with <code>accordion</code></p>
-                            </div>
-                            <div class="card-body">
-                                <div id="accordion-four" class="accordion accordion-no-gutter accordion-bordered">
-                                    <div class="accordion__item">
-                                        <div class="accordion__header" data-toggle="collapse" data-target="#bordered_no-gutter_collapseOne">
-                                            <span class="accordion__header--text">Accordion Header One</span>
-                                            <span class="accordion__header--indicator style_two"></span>
-                                        </div>
-                                        <div id="bordered_no-gutter_collapseOne" class="collapse accordion__body show" data-parent="#accordion-four">
-                                            <div class="accordion__body--text">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion__item">
-                                        <div class="accordion__header collapsed" data-toggle="collapse" data-target="#bordered_no-gutter_collapseTwo">
-                                            <span class="accordion__header--text">Accordion Header Two</span>
-                                            <span class="accordion__header--indicator style_two"></span>
-                                        </div>
-                                        <div id="bordered_no-gutter_collapseTwo" class="collapse accordion__body" data-parent="#accordion-four">
-                                            <div class="accordion__body--text">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion__item">
-                                        <div class="accordion__header collapsed" data-toggle="collapse" data-target="#bordered_no-gutter_collapseThree">
-                                            <span class="accordion__header--text">Accordion Header Three</span>
-                                            <span class="accordion__header--indicator style_two"></span>
-                                        </div>
-                                        <div id="bordered_no-gutter_collapseThree" class="collapse accordion__body" data-parent="#accordion-four">
-                                            <div class="accordion__body--text">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Column ends -->
-                    <!-- Column starts -->
-                    <div class="col-xl-6">
-                        <div class="card">
-                            <div class="card-header d-block">
-                                <h4 class="card-title">Accordion indicator in left position</h4>
-                                <p class="m-0 subtitle">Add <code>accordion-left-indicator</code> class with <code>accordion</code></p>
-                            </div>
-                            <div class="card-body">
-                                <div id="accordion-five" class="accordion accordion-left-indicator">
-                                    <div class="accordion__item">
-                                        <div class="accordion__header" data-toggle="collapse" data-target="#left-indicator_collapseOne">
-                                            <span class="accordion__header--text">Accordion Header One</span>
-                                            <span class="accordion__header--indicator"></span>
-                                        </div>
-                                        <div id="left-indicator_collapseOne" class="collapse accordion__body show" data-parent="#accordion-five">
-                                            <div class="accordion__body--text">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion__item">
-                                        <div class="accordion__header collapsed" data-toggle="collapse" data-target="#left-indicator_collapseTwo">
-                                            <span class="accordion__header--text">Accordion Header Two</span>
-                                            <span class="accordion__header--indicator"></span>
-                                        </div>
-                                        <div id="left-indicator_collapseTwo" class="collapse accordion__body" data-parent="#accordion-five">
-                                            <div class="accordion__body--text">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion__item">
-                                        <div class="accordion__header collapsed" data-toggle="collapse" data-target="#left-indicator_collapseThree">
-                                            <span class="accordion__header--text">Accordion Header Three</span>
-                                            <span class="accordion__header--indicator"></span>
-                                        </div>
-                                        <div id="left-indicator_collapseThree" class="collapse accordion__body" data-parent="#accordion-five">
-                                            <div class="accordion__body--text">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Column ends -->
-                    <!-- Column starts -->
-                    <div class="col-xl-6">
-                        <div class="card">
-                            <div class="card-header d-block">
-                                <h4 class="card-title">Accordion with icon</h4>
-                                <p class="m-0 subtitle">Add <code>accordion-with-icon</code> class with <code>accordion</code></p>
-                            </div>
-                            <div class="card-body">
-                                <div id="accordion-six" class="accordion accordion-with-icon">
-                                    <div class="accordion__item">
-                                        <div class="accordion__header" data-toggle="collapse" data-target="#with-icon_collapseOne">
-                                            <span class="accordion__header--icon"></span>
-                                            <span class="accordion__header--text">Accordion Header One</span>
-                                            <span class="accordion__header--indicator indicator_bordered"></span>
-                                        </div>
-                                        <div id="with-icon_collapseOne" class="collapse accordion__body show" data-parent="#accordion-six">
-                                            <div class="accordion__body--text">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion__item">
-                                        <div class="accordion__header collapsed" data-toggle="collapse" data-target="#with-icon_collapseTwo">
-                                            <span class="accordion__header--icon"></span>
-                                            <span class="accordion__header--text">Accordion Header Two</span>
-                                            <span class="accordion__header--indicator indicator_bordered"></span>
-                                        </div>
-                                        <div id="with-icon_collapseTwo" class="collapse accordion__body" data-parent="#accordion-six">
-                                            <div class="accordion__body--text">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion__item">
-                                        <div class="accordion__header collapsed" data-toggle="collapse" data-target="#with-icon_collapseThree">
-                                            <span class="accordion__header--icon"></span>
-                                            <span class="accordion__header--text">Accordion Header Three</span>
-                                            <span class="accordion__header--indicator indicator_bordered"></span>
-                                        </div>
-                                        <div id="with-icon_collapseThree" class="collapse accordion__body" data-parent="#accordion-six">
-                                            <div class="accordion__body--text">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Column ends -->
-                    <!-- Column starts -->
-                    <div class="col-xl-6">
-                        <div class="card">
-                            <div class="card-header d-block">
-                                <h4 class="card-title">Accordion header background</h4>
-                                <p class="m-0 subtitle">Add <code>accordion-header-bg</code> class with <code>accrodion</code></p>
-                            </div>
-                            <div class="card-body">
-                                <div id="accordion-seven" class="accordion accordion-header-bg accordion-bordered">
-                                    <div class="accordion__item">
-                                        <div class="accordion__header accordion__header--primary" data-toggle="collapse" data-target="#header-bg_collapseOne">
-                                            <span class="accordion__header--icon"></span>
-                                            <span class="accordion__header--text">Accordion Header One</span>
-                                            <span class="accordion__header--indicator"></span>
-                                        </div>
-                                        <div id="header-bg_collapseOne" class="collapse accordion__body show" data-parent="#accordion-seven">
-                                            <div class="accordion__body--text">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion__item">
-                                        <div class="accordion__header collapsed accordion__header--info" data-toggle="collapse" data-target="#header-bg_collapseTwo">
-                                            <span class="accordion__header--icon"></span>
-                                            <span class="accordion__header--text">Accordion Header Two</span>
-                                            <span class="accordion__header--indicator"></span>
-                                        </div>
-                                        <div id="header-bg_collapseTwo" class="collapse accordion__body" data-parent="#accordion-seven">
-                                            <div class="accordion__body--text">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion__item">
-                                        <div class="accordion__header collapsed accordion__header--success" data-toggle="collapse" data-target="#header-bg_collapseThree">
-                                            <span class="accordion__header--icon"></span>
-                                            <span class="accordion__header--text">Accordion Header Three</span>
-                                            <span class="accordion__header--indicator"></span>
-                                        </div>
-                                        <div id="header-bg_collapseThree" class="collapse accordion__body" data-parent="#accordion-seven">
-                                            <div class="accordion__body--text">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Column ends -->
-                    <!-- Column starts -->
-                    <div class="col-xl-6">
-                        <div class="card">
-                            <div class="card-header d-block">
-                                <h4 class="card-title">Accordion solid background</h4>
-                                <p class="m-0 subtitle">Add class <code>accordion-solid-bg</code> with <code>accordion</code></p>
-                            </div>
-                            <div class="card-body">
-                                <div id="accordion-eight" class="accordion accordion-solid-bg">
-                                    <div class="accordion__item">
-                                        <div class="accordion__header accordion__header--primary" data-toggle="collapse" data-target="#solid-bg_collapseOne">
-                                            <span class="accordion__header--icon"></span>
-                                            <span class="accordion__header--text">Accordion Header One</span>
-                                            <span class="accordion__header--indicator"></span>
-                                        </div>
-                                        <div id="solid-bg_collapseOne" class="collapse accordion__body show" data-parent="#accordion-eight">
-                                            <div class="accordion__body--text">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion__item">
-                                        <div class="accordion__header collapsed accordion__header--info" data-toggle="collapse" data-target="#solid-bg_collapseTwo">
-                                            <span class="accordion__header--icon"></span>
-                                            <span class="accordion__header--text">Accordion Header Two</span>
-                                            <span class="accordion__header--indicator"></span>
-                                        </div>
-                                        <div id="solid-bg_collapseTwo" class="collapse accordion__body" data-parent="#accordion-eight">
-                                            <div class="accordion__body--text">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion__item">
-                                        <div class="accordion__header collapsed accordion__header--success" data-toggle="collapse" data-target="#solid-bg_collapseThree">
-                                            <span class="accordion__header--icon"></span>
-                                            <span class="accordion__header--text">Accordion Header Three</span>
-                                            <span class="accordion__header--indicator"></span>
-                                        </div>
-                                        <div id="solid-bg_collapseThree" class="collapse accordion__body" data-parent="#accordion-eight">
-                                            <div class="accordion__body--text">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Column ends -->
-                    <!-- Column starts -->
-                    <div class="col-xl-6">
-                        <div class="card">
-                            <div class="card-header d-block">
-                                <h4 class="card-title">Accordion active background</h4>
-                                <p class="m-0 subtitle">Add class <code>accordion-active-header</code> with <code>accordion</code></p>
-                            </div>
-                            <div class="card-body">
-                                <div id="accordion-nine" class="accordion accordion-active-header">
-                                    <div class="accordion__item">
-                                        <div class="accordion__header" data-toggle="collapse" data-target="#active-header_collapseOne">
-                                            <span class="accordion__header--icon"></span>
-                                            <span class="accordion__header--text">Accordion Header One</span>
-                                            <span class="accordion__header--indicator"></span>
-                                        </div>
-                                        <div id="active-header_collapseOne" class="collapse accordion__body show" data-parent="#accordion-nine">
-                                            <div class="accordion__body--text">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion__item">
-                                        <div class="accordion__header collapsed" data-toggle="collapse" data-target="#active-header_collapseTwo">
-                                            <span class="accordion__header--icon"></span>
-                                            <span class="accordion__header--text">Accordion Header Two</span>
-                                            <span class="accordion__header--indicator"></span>
-                                        </div>
-                                        <div id="active-header_collapseTwo" class="collapse accordion__body" data-parent="#accordion-nine">
-                                            <div class="accordion__body--text">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion__item">
-                                        <div class="accordion__header collapsed" data-toggle="collapse" data-target="#active-header_collapseThree">
-                                            <span class="accordion__header--icon"></span>
-                                            <span class="accordion__header--text">Accordion Header Three</span>
-                                            <span class="accordion__header--indicator"></span>
-                                        </div>
-                                        <div id="active-header_collapseThree" class="collapse accordion__body" data-parent="#accordion-nine">
-                                            <div class="accordion__body--text">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Column ends -->
-                    <!-- Column starts -->
-                    <div class="col-xl-6">
-                        <div class="card transparent-card">
-                            <div class="card-header d-block">
-                                <h4 class="card-title">Accordion header shadow</h4>
-                                <p class="m-0 subtitle">Add <code>accordion-header-shadow</code> and <code>accordion-rounded</code> class with <code>accordion</code></p>
-                            </div>
-                            <div class="card-body">
-                                <div id="accordion-ten" class="accordion accordion-header-shadow accordion-rounded">
-                                    <div class="accordion__item">
-                                        <div class="accordion__header collapsed accordion__header--primary" data-toggle="collapse" data-target="#header-shadow_collapseOne">
-                                            <span class="accordion__header--icon"></span>
-                                            <span class="accordion__header--text">Accordion Header One</span>
-                                            <span class="accordion__header--indicator"></span>
-                                        </div>
-                                        <div id="header-shadow_collapseOne" class="collapse accordion__body show" data-parent="#accordion-ten">
-                                            <div class="accordion__body--text">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion__item">
-                                        <div class="accordion__header collapsed accordion__header--info" data-toggle="collapse" data-target="#header-shadow_collapseTwo">
-                                            <span class="accordion__header--icon"></span>
-                                            <span class="accordion__header--text">Accordion Header Two</span>
-                                            <span class="accordion__header--indicator"></span>
-                                        </div>
-                                        <div id="header-shadow_collapseTwo" class="collapse accordion__body" data-parent="#accordion-ten">
-                                            <div class="accordion__body--text">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion__item">
-                                        <div class="accordion__header collapsed accordion__header--success" data-toggle="collapse" data-target="#header-shadow_collapseThree">
-                                            <span class="accordion__header--icon"></span>
-                                            <span class="accordion__header--text">Accordion Header Three</span>
-                                            <span class="accordion__header--indicator"></span>
-                                        </div>
-                                        <div id="header-shadow_collapseThree" class="collapse accordion__body" data-parent="#accordion-ten">
-                                            <div class="accordion__body--text">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Column ends -->
-                    <!-- Column starts -->
-                    <div class="col-xl-6">
-                        <div class="card">
-                            <div class="card-header d-block">
-                                <h4 class="card-title">Accordion rounded stylish</h4>
-                                <p class="m-0 subtitle">Add <code>accordion-rounded-stylish</code> class with <code>accordion</code></p>
-                            </div>
-                            <div class="card-body">
-                                <div id="accordion-eleven" class="accordion accordion-rounded-stylish accordion-bordered">
-                                    <div class="accordion__item">
-                                        <div class="accordion__header accordion__header--primary" data-toggle="collapse" data-target="#rounded-stylish_collapseOne">
-                                            <span class="accordion__header--icon"></span>
-                                            <span class="accordion__header--text">Accordion Header One</span>
-                                            <span class="accordion__header--indicator"></span>
-                                        </div>
-                                        <div id="rounded-stylish_collapseOne" class="collapse accordion__body show" data-parent="#accordion-eleven">
-                                            <div class="accordion__body--text">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion__item">
-                                        <div class="accordion__header collapsed accordion__header--info" data-toggle="collapse" data-target="#rounded-stylish_collapseTwo">
-                                            <span class="accordion__header--icon"></span>
-                                            <span class="accordion__header--text">Accordion Header Two</span>
-                                            <span class="accordion__header--indicator"></span>
-                                        </div>
-                                        <div id="rounded-stylish_collapseTwo" class="collapse accordion__body" data-parent="#accordion-eleven">
-                                            <div class="accordion__body--text">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion__item">
-                                        <div class="accordion__header collapsed accordion__header--success" data-toggle="collapse" data-target="#rounded-stylish_collapseThree">
-                                            <span class="accordion__header--icon"></span>
-                                            <span class="accordion__header--text">Accordion Header Three</span>
-                                            <span class="accordion__header--indicator"></span>
-                                        </div>
-                                        <div id="rounded-stylish_collapseThree" class="collapse accordion__body" data-parent="#accordion-eleven">
-                                            <div class="accordion__body--text">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Column ends -->
-                    <!-- Column starts -->
-                    <div class="col-xl-6">
-                        <div class="card">
-                            <div class="card-header d-block">
-                                <h4 class="card-title">Accordion gradient</h4>
-                                <p class="m-0 subtitle">Add <code>accordion-gradient</code> class with <code>accordion</code></p>
-                            </div>
-                            <div class="card-body">
-                                <div id="accordion-twelve" class="accordion accordion-rounded-stylish accordion-gradient">
-                                    <div class="accordion__item">
-                                        <div class="accordion__header accordion__header--primary" data-toggle="collapse" data-target="#gradient_collapseOne"> <span class="accordion__header--icon"></span>
-                                            <span class="accordion__header--text">Accordion Header One</span>
-                                            <span class="accordion__header--indicator"></span>
-                                        </div>
-                                        <div id="gradient_collapseOne" class="collapse accordion__body show" data-parent="#accordion-twelve">
-                                            <div class="accordion__body--text">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion__item">
-                                        <div class="accordion__header collapsed accordion__header--info" data-toggle="collapse" data-target="#gradient_collapseTwo"> <span class="accordion__header--icon"></span>
-                                            <span class="accordion__header--text">Accordion Header Two</span>
-                                            <span class="accordion__header--indicator"></span>
-                                        </div>
-                                        <div id="gradient_collapseTwo" class="collapse accordion__body" data-parent="#accordion-twelve">
-                                            <div class="accordion__body--text">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion__item">
-                                        <div class="accordion__header collapsed accordion__header--success" data-toggle="collapse" data-target="#gradient_collapseThree"> <span class="accordion__header--icon"></span>
-                                            <span class="accordion__header--text">Accordion Header Three</span>
-                                            <span class="accordion__header--indicator"></span>
-                                        </div>
-                                        <div id="gradient_collapseThree" class="collapse accordion__body" data-parent="#accordion-twelve">
-                                            <div class="accordion__body--text">
-                                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Column ends -->
                 </div>
-                <!-- Row ends -->
             </div>
-            <!-- container ends -->
         </div>
         <!--**********************************
-                Content body end
-            ***********************************-->
+            Content body end
+        ***********************************-->
 
 
         <!--**********************************
