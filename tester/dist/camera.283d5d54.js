@@ -18098,7 +18098,7 @@ var gf = function () {
 
           case 1:
             return n = [{
-              paths: ["./" + this.weightDataFileName],
+              paths: ["/" + this.weightDataFileName],
               weights: t.weightSpecs
             }], o = {
               modelTopology: t.modelTopology,
@@ -18366,7 +18366,7 @@ var Cf = function () {
             return (e = Object.assign({
               method: this.DEFAULT_METHOD
             }, this.requestInit)).body = new FormData(), n = [{
-              paths: ["./model.weights.bin"],
+              paths: ["/model.weights.bin"],
               weights: t.weightSpecs
             }], o = {
               modelTopology: t.modelTopology,
@@ -41090,7 +41090,7 @@ var _dat = _interopRequireDefault(require("dat.gui"));
 
 var _stats = _interopRequireDefault(require("stats.js"));
 
-var _demo_util = require("./demo_util");
+var _demo_util = require("/demo_util");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -41549,5 +41549,5 @@ async function bindPage() {
 navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia; // kick off the demo
 
 bindPage();
-},{"@tensorflow-models/posenet":"node_modules/@tensorflow-models/posenet/dist/posenet.esm.js","dat.gui":"node_modules/dat.gui/build/dat.gui.module.js","stats.js":"node_modules/stats.js/build/stats.min.js","./demo_util":"demo_util.js"}]},{},["camera.js"], null)
+},{"@tensorflow-models/posenet":"node_modules/@tensorflow-models/posenet/dist/posenet.esm.js","dat.gui":"node_modules/dat.gui/build/dat.gui.module.js","stats.js":"node_modules/stats.js/build/stats.min.js","/demo_util":"demo_util.js"}]},{},["camera.js"], null)
 //# sourceMappingURL=/camera.283d5d54.js.map

@@ -27129,7 +27129,7 @@ table.dataTable thead .sorting {
     box-shadow: none; }
 
 .welcome-content {
-  background: url("./../images/1.jpg");
+  background: url("/../images/1.jpg");
   background-size: cover;
   background-position: center;
   height: 100%;
