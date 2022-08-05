@@ -1,6 +1,6 @@
 ---
 layout: dashboard3
-title: About
+title: Workout Plan
 permalink: /dashboard/workout-plan.html
 linknum: 2
 ---

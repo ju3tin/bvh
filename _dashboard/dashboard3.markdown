@@ -1,6 +1,6 @@
 ---
 layout: dashboard4
-title: About
+title: Distance Map
 permalink: /dashboard/distance-map.html
 linknum: 2
 ---
