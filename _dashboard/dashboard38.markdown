@@ -1,6 +1,6 @@
 ---
 layout: dashboard39
-title: About
-permalink: /dashboard/ui-button-group.html
+title: Ui Typography
+permalink: /dashboard/ui-typography.html
 linknum: 2
 ---

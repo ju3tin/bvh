@@ -1,6 +1,6 @@
 ---
 layout: dashboard33
-title: About
+title: Ui Card
 permalink: /dashboard/ui-card.html
 linknum: 2
 ---

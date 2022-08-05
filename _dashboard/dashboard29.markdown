@@ -1,6 +1,6 @@
 ---
 layout: dashboard30
-title: About
+title: Ui Modal
 permalink: /dashboard/ui-modal.html
 linknum: 2
 ---

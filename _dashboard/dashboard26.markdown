@@ -1,6 +1,6 @@
 ---
 layout: dashboard27
-title: About
+title:  Ui Alert
 permalink: /dashboard/ui-alert.html
 linknum: 2
 ---

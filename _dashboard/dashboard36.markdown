@@ -1,6 +1,6 @@
 ---
 layout: dashboard37
-title: About
+title: Ui Progressbar
 permalink: /dashboard/ui-progressbar.html
 linknum: 2
 ---

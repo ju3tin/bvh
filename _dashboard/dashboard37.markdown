@@ -1,6 +1,6 @@
 ---
 layout: dashboard38
-title: About
-permalink: /dashboard/ui-button-group.html
+title: Ui Tab
+permalink: /dashboard/ui-tab.html
 linknum: 2
 ---

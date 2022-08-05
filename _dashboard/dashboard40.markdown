@@ -1,6 +1,6 @@
 ---
 layout: dashboard31
-title: About
-permalink: /dashboard/ui-button-group.html
+title: Ui Grid
+permalink: /dashboard/ui-grid.html
 linknum: 2
 ---

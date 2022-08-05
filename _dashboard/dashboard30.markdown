@@ -1,6 +1,6 @@
 ---
 layout: dashboard31
-title: About
+title: Ui Button Group
 permalink: /dashboard/ui-button-group.html
 linknum: 2
 ---

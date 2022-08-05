@@ -1,6 +1,6 @@
 ---
 layout: dashboard28
-title: About
+title: Ui Badge
 permalink: /dashboard/ui-badge.html
 linknum: 2
 ---

@@ -1,6 +1,6 @@
 ---
 layout: dashboard31
-title: About
-permalink: /dashboard/ui-button-group.html
+title: Ui Pagination
+permalink: /dashboard/ui-pagination.html
 linknum: 2
 ---

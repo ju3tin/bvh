@@ -1,6 +1,6 @@
 ---
 layout: dashboard32
-title: About
+title: Ui List Group
 permalink: /dashboard/ui-list-group.html
 linknum: 2
 ---

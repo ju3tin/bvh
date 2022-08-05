@@ -1,6 +1,6 @@
 ---
 layout: dashboard34
-title: About
+title: Ui Carousel
 permalink: /dashboard/ui-carousel.html
 linknum: 2
 ---
