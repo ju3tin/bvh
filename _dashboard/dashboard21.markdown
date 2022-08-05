@@ -1,6 +1,6 @@
 ---
 layout: dashboard22
-title: About
-permalink: /dashboard/chart-chartjs.html
+title: Chart Chartist
+permalink: /dashboard/chart-chartist.html
 linknum: 2
 ---

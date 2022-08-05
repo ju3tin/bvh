@@ -1,6 +1,6 @@
 ---
 layout: dashboard23
-title: About
-permalink: /dashboard/chart-chartist.html
+title: Chart Sparkline
+permalink: /dashboard/chart-sparkline.html
 linknum: 2
 ---
