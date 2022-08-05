@@ -1,6 +1,6 @@
 ---
 layout: dashboard24
-title: About
-permalink: /dashboard/chart-sparkline.html
+title: Chart Peity
+permalink: /dashboard/chart-peity.html
 linknum: 2
 ---
