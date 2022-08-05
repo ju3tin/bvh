@@ -1,6 +1,6 @@
 ---
 layout: dashboard2
-title: About
+title: Workout Statistic
 permalink: /dashboard/workout-statistic.html
 linknum: 2
 ---
