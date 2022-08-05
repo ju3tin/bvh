@@ -1,6 +1,6 @@
 ---
 layout: dashboard25
-title: About
-permalink: /dashboard/chart-peity.html
+title: Ui Accordion
+permalink: /dashboard/ui-accordion.html
 linknum: 2
 ---

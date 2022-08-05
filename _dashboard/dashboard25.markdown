@@ -1,6 +1,6 @@
 ---
 layout: dashboard26
 title: About
-permalink: /dashboard/ui-accordion.html
+permalink: /dashboard/dude.html
 linknum: 2
 ---
