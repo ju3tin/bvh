@@ -1,6 +1,6 @@
 ---
 layout: dashboard18
-title: About
+title: Ecom Customers
 permalink: /dashboard/ecom-customers.html
 linknum: 2
 ---

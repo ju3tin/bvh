@@ -1,6 +1,6 @@
 ---
 layout: dashboard20
-title: About
+title: Chart Morris
 permalink: /dashboard/chart-morris.html
 linknum: 2
 ---

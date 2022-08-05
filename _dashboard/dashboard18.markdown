@@ -1,6 +1,6 @@
 ---
 layout: dashboard19
-title: About
+title: Chart Flot
 permalink: /dashboard/chart-flot.html
 linknum: 2
 ---
