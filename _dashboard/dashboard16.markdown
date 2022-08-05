@@ -1,6 +1,6 @@
 ---
 layout: dashboard17
-title: About
+title: Ecom Invoice
 permalink: /dashboard/ecom-invoice.html
 linknum: 2
 ---

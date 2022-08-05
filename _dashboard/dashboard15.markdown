@@ -1,6 +1,6 @@
 ---
 layout: dashboard16
-title: About
+title: Ecom Checkout
 permalink: /dashboard/ecom-checkout.html
 linknum: 2
 ---
