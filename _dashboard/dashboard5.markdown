@@ -1,6 +1,6 @@
 ---
 layout: dashboard6
-title: About
+title: Personal Record
 permalink: /dashboard/personal-record.html
 linknum: 2
 ---

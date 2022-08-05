@@ -1,6 +1,6 @@
 ---
 layout: dashboard12
-title: About
+title: Ecom Product Grid
 permalink: /dashboard/ecom-product-grid.html
 linknum: 2
 ---

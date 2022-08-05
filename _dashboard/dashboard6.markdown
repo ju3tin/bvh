@@ -1,6 +1,6 @@
 ---
 layout: dashboard7
-title: About
+title: Profile
 permalink: /dashboard/app-profile.html
 linknum: 2
 ---

@@ -1,6 +1,6 @@
 ---
 layout: dashboard13
-title: About
+title: Ecom Product List
 permalink: /dashboard/ecom-product-list.html
 linknum: 2
 ---
