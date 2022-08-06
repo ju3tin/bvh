@@ -1,6 +1,6 @@
 ---
 layout: dashboard43
-title: Uc Select2
-permalink: /dashboard/uc-select2.html
+title: Uc Nestable
+permalink: /dashboard/uc-nestable.html
 linknum: 2
 ---
