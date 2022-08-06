@@ -1,6 +1,6 @@
 ---
 layout: dashboard26
-title: About
-permalink: /dashboard/dude.html
+title: Ui Media Object
+permalink: /dashboard/ui-media-object.html
 linknum: 2
 ---
