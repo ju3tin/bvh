@@ -30,6 +30,9 @@ links2:
 - title: Home Page 03
   num: 3
   url: /home/
+- title: Dashboard
+  num: 3
+  url: /dashboard/
 links3:
 - title: Home Style 01
   num: 1
