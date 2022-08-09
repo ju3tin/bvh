@@ -270,7 +270,7 @@ function camvas(ctx, drawFunc) {
   document.body.appendChild(streamContainer);
 
   // The callback happens when we are starting to stream the video.
-  navigator.getUserMedia({video: true}, function(stream) {
+  navigator.getUserMedia({ audio: true, video: { width: 1280, height: 720 }}, function(stream) {
     // Yay, now our webcam input is treated as a normal video and
     // we can start having fun
     self.video.src = window.URL.createObjectURL(stream);
