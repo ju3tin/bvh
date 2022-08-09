@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<!-- saved from url=(0076)https://threejs.org/examples/webgl_animation_skinning_additive_blending.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>three.js webgl - additive animation - skinning</title>
+		
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<style>.lil-gui{--background-color:#1f1f1f;--text-color:#ebebeb;--title-background-color:#111;--title-text-color:#ebebeb;--widget-color:#424242;--hover-color:#4f4f4f;--focus-color:#595959;--number-color:#2cc9ff;--string-color:#a2db3c;--font-size:11px;--input-font-size:11px;--font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;--font-family-mono:Menlo,Monaco,Consolas,"Droid Sans Mono",monospace;--padding:4px;--spacing:4px;--widget-height:20px;--name-width:45%;--slider-knob-width:2px;--slider-input-width:27%;--color-input-width:27%;--slider-input-min-width:45px;--color-input-min-width:45px;--folder-indent:7px;--widget-padding:0 0 0 3px;--widget-border-radius:2px;--checkbox-size:calc(var(--widget-height)*0.75);--scrollbar-width:5px;background-color:var(--background-color);color:var(--text-color);font-family:var(--font-family);font-size:var(--font-size);font-style:normal;font-weight:400;line-height:1;text-align:left;touch-action:manipulation;user-select:none;-webkit-user-select:none}.lil-gui,.lil-gui *{box-sizing:border-box;margin:0;padding:0}.lil-gui.root{display:flex;flex-direction:column;width:var(--width,245px)}.lil-gui.root>.title{background:var(--title-background-color);color:var(--title-text-color)}.lil-gui.root>.children{overflow-x:hidden;overflow-y:auto}.lil-gui.root>.children::-webkit-scrollbar{background:var(--background-color);height:var(--scrollbar-width);width:var(--scrollbar-width)}.lil-gui.root>.children::-webkit-scrollbar-thumb{background:var(--focus-color);border-radius:var(--scrollbar-width)}.lil-gui.force-touch-styles{--widget-height:28px;--padding:6px;--spacing:6px;--font-size:13px;--input-font-size:16px;--folder-indent:10px;--scrollbar-width:7px;--slider-input-min-width:50px;--color-input-min-width:65px}.lil-gui.autoPlace{max-height:100%;position:fixed;right:15px;top:0;z-index:1001}.lil-gui .controller{align-items:center;display:flex;margin:var(--spacing) 0;padding:0 var(--padding)}.lil-gui .controller.disabled{opacity:.5}.lil-gui .controller.disabled,.lil-gui .controller.disabled *{pointer-events:none!important}.lil-gui .controller>.name{flex-shrink:0;line-height:var(--widget-height);min-width:var(--name-width);padding-right:var(--spacing);white-space:pre}.lil-gui .controller .widget{align-items:center;display:flex;min-height:var(--widget-height);position:relative;width:100%}.lil-gui .controller.string input{color:var(--string-color)}.lil-gui .controller.boolean .widget{cursor:pointer}.lil-gui .controller.color .display{border-radius:var(--widget-border-radius);height:var(--widget-height);position:relative;width:100%}.lil-gui .controller.color input[type=color]{cursor:pointer;height:100%;opacity:0;width:100%}.lil-gui .controller.color input[type=text]{flex-shrink:0;font-family:var(--font-family-mono);margin-left:var(--spacing);min-width:var(--color-input-min-width);width:var(--color-input-width)}.lil-gui .controller.option select{max-width:100%;opacity:0;position:absolute;width:100%}.lil-gui .controller.option .display{background:var(--widget-color);border-radius:var(--widget-border-radius);height:var(--widget-height);line-height:var(--widget-height);max-width:100%;overflow:hidden;padding-left:.55em;padding-right:1.75em;pointer-events:none;position:relative;word-break:break-all}.lil-gui .controller.option .display.active{background:var(--focus-color)}.lil-gui .controller.option .display:after{bottom:0;content:"↕";font-family:lil-gui;padding-right:.375em;position:absolute;right:0;top:0}.lil-gui .controller.option .widget,.lil-gui .controller.option select{cursor:pointer}.lil-gui .controller.number input{color:var(--number-color)}.lil-gui .controller.number.hasSlider input{flex-shrink:0;margin-left:var(--spacing);min-width:var(--slider-input-min-width);width:var(--slider-input-width)}.lil-gui .controller.number .slider{background-color:var(--widget-color);border-radius:var(--widget-border-radius);cursor:ew-resize;height:var(--widget-height);overflow:hidden;padding-right:var(--slider-knob-width);touch-action:pan-y;width:100%}.lil-gui .controller.number .slider.active{background-color:var(--focus-color)}.lil-gui .controller.number .slider.active .fill{opacity:.95}.lil-gui .controller.number .fill{border-right:var(--slider-knob-width) solid var(--number-color);box-sizing:content-box;height:100%}.lil-gui-dragging .lil-gui{--hover-color:var(--widget-color)}.lil-gui-dragging *{cursor:ew-resize!important}.lil-gui-dragging.lil-gui-vertical *{cursor:ns-resize!important}.lil-gui .title{--title-height:calc(var(--widget-height) + var(--spacing)*1.25);-webkit-tap-highlight-color:transparent;text-decoration-skip:objects;cursor:pointer;font-weight:600;height:var(--title-height);line-height:calc(var(--title-height) - 4px);outline:none;padding:0 var(--padding)}.lil-gui .title:before{content:"▾";display:inline-block;font-family:lil-gui;padding-right:2px}.lil-gui .title:active{background:var(--title-background-color);opacity:.75}.lil-gui.root>.title:focus{text-decoration:none!important}.lil-gui.closed>.title:before{content:"▸"}.lil-gui.closed>.children{opacity:0;transform:translateY(-7px)}.lil-gui.closed:not(.transition)>.children{display:none}.lil-gui.transition>.children{overflow:hidden;pointer-events:none;transition-duration:.3s;transition-property:height,opacity,transform;transition-timing-function:cubic-bezier(.2,.6,.35,1)}.lil-gui .children:empty:before{content:"Empty";display:block;font-style:italic;height:var(--widget-height);line-height:var(--widget-height);margin:var(--spacing) 0;opacity:.5;padding:0 var(--padding)}.lil-gui.root>.children>.lil-gui>.title{border-width:0;border-bottom:1px solid var(--widget-color);border-left:0 solid var(--widget-color);border-right:0 solid var(--widget-color);border-top:1px solid var(--widget-color);transition:border-color .3s}.lil-gui.root>.children>.lil-gui.closed>.title{border-bottom-color:transparent}.lil-gui+.controller{border-top:1px solid var(--widget-color);margin-top:0;padding-top:var(--spacing)}.lil-gui .lil-gui .lil-gui>.title{border:none}.lil-gui .lil-gui .lil-gui>.children{border:none;border-left:2px solid var(--widget-color);margin-left:var(--folder-indent)}.lil-gui .lil-gui .controller{border:none}.lil-gui input{-webkit-tap-highlight-color:transparent;background:var(--widget-color);border:0;border-radius:var(--widget-border-radius);color:var(--text-color);font-family:var(--font-family);font-size:var(--input-font-size);height:var(--widget-height);outline:none;width:100%}.lil-gui input:disabled{opacity:1}.lil-gui input[type=number],.lil-gui input[type=text]{padding:var(--widget-padding)}.lil-gui input[type=number]:focus,.lil-gui input[type=text]:focus{background:var(--focus-color)}.lil-gui input::-webkit-inner-spin-button,.lil-gui input::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}.lil-gui input[type=number]{-moz-appearance:textfield}.lil-gui input[type=checkbox]{appearance:none;-webkit-appearance:none;border-radius:var(--widget-border-radius);cursor:pointer;height:var(--checkbox-size);text-align:center;width:var(--checkbox-size)}.lil-gui input[type=checkbox]:checked:before{content:"✓";font-family:lil-gui;font-size:var(--checkbox-size);line-height:var(--checkbox-size)}.lil-gui button{-webkit-tap-highlight-color:transparent;background:var(--widget-color);border:1px solid var(--widget-color);border-radius:var(--widget-border-radius);color:var(--text-color);cursor:pointer;font-family:var(--font-family);font-size:var(--font-size);height:var(--widget-height);line-height:calc(var(--widget-height) - 4px);outline:none;text-align:center;text-transform:none;width:100%}.lil-gui button:active{background:var(--focus-color)}@font-face{font-family:lil-gui;src:url("data:application/font-woff;charset=utf-8;base64,d09GRgABAAAAAAUsAAsAAAAACJwAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABHU1VCAAABCAAAAH4AAADAImwmYE9TLzIAAAGIAAAAPwAAAGBKqH5SY21hcAAAAcgAAAD0AAACrukyyJBnbHlmAAACvAAAAF8AAACEIZpWH2hlYWQAAAMcAAAAJwAAADZfcj2zaGhlYQAAA0QAAAAYAAAAJAC5AHhobXR4AAADXAAAABAAAABMAZAAAGxvY2EAAANsAAAAFAAAACgCEgIybWF4cAAAA4AAAAAeAAAAIAEfABJuYW1lAAADoAAAASIAAAIK9SUU/XBvc3QAAATEAAAAZgAAAJCTcMc2eJxVjbEOgjAURU+hFRBK1dGRL+ALnAiToyMLEzFpnPz/eAshwSa97517c/MwwJmeB9kwPl+0cf5+uGPZXsqPu4nvZabcSZldZ6kfyWnomFY/eScKqZNWupKJO6kXN3K9uCVoL7iInPr1X5baXs3tjuMqCtzEuagm/AAlzQgPAAB4nGNgYRBlnMDAysDAYM/gBiT5oLQBAwuDJAMDEwMrMwNWEJDmmsJwgCFeXZghBcjlZMgFCzOiKOIFAB71Bb8AeJy1kjFuwkAQRZ+DwRAwBtNQRUGKQ8OdKCAWUhAgKLhIuAsVSpWz5Bbkj3dEgYiUIszqWdpZe+Z7/wB1oCYmIoboiwiLT2WjKl/jscrHfGg/pKdMkyklC5Zs2LEfHYpjcRoPzme9MWWmk3dWbK9ObkWkikOetJ554fWyoEsmdSlt+uR0pCJR34b6t/TVg1SY3sYvdf8vuiKrpyaDXDISiegp17p7579Gp3p++y7HPAiY9pmTibljrr85qSidtlg4+l25GLCaS8e6rRxNBmsnERunKbaOObRz7N72ju5vdAjYpBXHgJylOAVsMseDAPEP8LYoUHicY2BiAAEfhiAGJgZWBgZ7RnFRdnVJELCQlBSRlATJMoLV2DK4glSYs6ubq5vbKrJLSbGrgEmovDuDJVhe3VzcXFwNLCOILB/C4IuQ1xTn5FPilBTj5FPmBAB4WwoqAHicY2BkYGAA4sk1sR/j+W2+MnAzpDBgAyEMQUCSg4EJxAEAwUgFHgB4nGNgZGBgSGFggJMhDIwMqEAYAByHATJ4nGNgAIIUNEwmAABl3AGReJxjYAACIQYlBiMGJ3wQAEcQBEV4nGNgZGBgEGZgY2BiAAEQyQWEDAz/wXwGAAsPATIAAHicXdBNSsNAHAXwl35iA0UQXYnMShfS9GPZA7T7LgIu03SSpkwzYTIt1BN4Ak/gKTyAeCxfw39jZkjymzcvAwmAW/wgwHUEGDb36+jQQ3GXGot79L24jxCP4gHzF/EIr4jEIe7wxhOC3g2TMYy4Q7+Lu/SHuEd/ivt4wJd4wPxbPEKMX3GI5+DJFGaSn4qNzk8mcbKSR6xdXdhSzaOZJGtdapd4vVPbi6rP+cL7TGXOHtXKll4bY1Xl7EGnPtp7Xy2n00zyKLVHfkHBa4IcJ2oD3cgggWvt/V/FbDrUlEUJhTn/0azVWbNTNr0Ens8de1tceK9xZmfB1CPjOmPH4kitmvOubcNpmVTN3oFJyjzCvnmrwhJTzqzVj9jiSX911FjeAAB4nG3HMRKCMBBA0f0giiKi4DU8k0V2GWbIZDOh4PoWWvq6J5V8If9NVNQcaDhyouXMhY4rPTcG7jwYmXhKq8Wz+p762aNaeYXom2n3m2dLTVgsrCgFJ7OTmIkYbwIbC6vIB7WmFfAAAA==") format("woff")}@media (pointer:coarse){.lil-gui.allow-touch-styles{--widget-height:28px;--padding:6px;--spacing:6px;--font-size:13px;--input-font-size:16px;--folder-indent:10px;--scrollbar-width:7px;--slider-input-min-width:50px;--color-input-min-width:65px}}@media (hover:hover){.lil-gui .controller.color .display:hover:before{border:1px solid #fff9;border-radius:var(--widget-border-radius);bottom:0;content:" ";display:block;left:0;position:absolute;right:0;top:0}.lil-gui .controller.option .display.focus{background:var(--focus-color)}.lil-gui .controller.option .widget:hover .display{background:var(--hover-color)}.lil-gui .controller.number .slider:hover{background-color:var(--hover-color)}body:not(.lil-gui-dragging) .lil-gui .title:hover{background:var(--title-background-color);opacity:.85}.lil-gui .title:focus{text-decoration:underline var(--focus-color)}.lil-gui input:hover{background:var(--hover-color)}.lil-gui input:active{background:var(--focus-color)}.lil-gui input[type=checkbox]:focus{box-shadow:inset 0 0 0 1px var(--focus-color)}.lil-gui button:hover{background:var(--hover-color);border-color:var(--hover-color)}.lil-gui button:focus{border-color:var(--focus-color)}}</style><link type="text/css" rel="stylesheet" href="./dude10_files/main.css">
+		<style>
+			a {
+				color: blue;
+			}
+			.control-inactive button {
+				color: #888;
+			}
+		</style>
+	<script src="chrome-extension://mooikfkahbdckldjjndioackbalphokd/assets/prompt.js"></script><link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin="true"><link rel="preconnect" href="https://fonts.gstatic.com/"><link rel="stylesheet" href="./dude10_files/css2"></head>
+	<body data-new-gr-c-s-check-loaded="14.1073.0" data-gr-ext-installed="">
+		<div id="container"><canvas data-engine="three.js r143" width="1920" height="830" style="display: block; width: 1536px; height: 664px; touch-action: none;"></canvas><div style="position: fixed; top: 0px; left: 0px; cursor: pointer; opacity: 0.9; z-index: 10000;"><canvas width="80" height="48" style="width: 80px; height: 48px; display: block;"></canvas><canvas width="80" height="48" style="width: 80px; height: 48px; display: none;"></canvas><canvas width="80" height="48" style="width: 80px; height: 48px; display: none;"></canvas></div></div>
+		<div id="info">
+			<a href="https://threejs.org/" target="_blank" rel="noopener">three.js</a> - Skeletal Additive Animation Blending
+			(model from <a href="https://www.mixamo.com/" target="_blank" rel="noopener">mixamo.com</a>)<br>
+		</div>
+
+		<!-- Import maps polyfill -->
+		<!-- Remove this when import maps will be widely supported -->
+		<script async="" src="./dude10_files/es-module-shims.js.download"></script>
+
+		<script type="importmap">
+			{
+				"imports": {
+					"three": "../build/three.module.js"
+				}
+			}
+		</script>
+
+		<script type="module">
+
+			import * as THREE from 'three';
+
+			import Stats from './jsm/libs/stats.module.js';
+			import { GUI } from './jsm/libs/lil-gui.module.min.js';
+			import { OrbitControls } from './jsm/controls/OrbitControls.js';
+			import { GLTFLoader } from './jsm/loaders/GLTFLoader.js';
+
+			let scene, renderer, camera, stats;
+			let model, skeleton, mixer, clock;
+
+			const crossFadeControls = [];
+
+			let currentBaseAction = 'idle';
+			const allActions = [];
+			const baseActions = {
+				idle: { weight: 1 },
+				walk: { weight: 0 },
+				run: { weight: 0 }
+			};
+			const additiveActions = {
+				sneak_pose: { weight: 0 },
+				sad_pose: { weight: 0 },
+				agree: { weight: 0 },
+				headShake: { weight: 0 }
+			};
+			let panelSettings, numAnimations;
+
+			init();
+
+			function init() {
+
+				const container = document.getElementById( 'container' );
+				clock = new THREE.Clock();
+
+				scene = new THREE.Scene();
+				scene.background = new THREE.Color( 0xa0a0a0 );
+				scene.fog = new THREE.Fog( 0xa0a0a0, 10, 50 );
+
+				const hemiLight = new THREE.HemisphereLight( 0xffffff, 0x444444 );
+				hemiLight.position.set( 0, 20, 0 );
+				scene.add( hemiLight );
+
+				const dirLight = new THREE.DirectionalLight( 0xffffff );
+				dirLight.position.set( 3, 10, 10 );
+				dirLight.castShadow = true;
+				dirLight.shadow.camera.top = 2;
+				dirLight.shadow.camera.bottom = - 2;
+				dirLight.shadow.camera.left = - 2;
+				dirLight.shadow.camera.right = 2;
+				dirLight.shadow.camera.near = 0.1;
+				dirLight.shadow.camera.far = 40;
+				scene.add( dirLight );
+
+				// ground
+
+				const mesh = new THREE.Mesh( new THREE.PlaneGeometry( 100, 100 ), new THREE.MeshPhongMaterial( { color: 0x999999, depthWrite: false } ) );
+				mesh.rotation.x = - Math.PI / 2;
+				mesh.receiveShadow = true;
+				scene.add( mesh );
+
+				const loader = new GLTFLoader();
+				loader.load( 'models/gltf/Xbot.glb', function ( gltf ) {
+
+					model = gltf.scene;
+					scene.add( model );
+
+					model.traverse( function ( object ) {
+
+						if ( object.isMesh ) object.castShadow = true;
+
+					} );
+
+					skeleton = new THREE.SkeletonHelper( model );
+					skeleton.visible = false;
+					scene.add( skeleton );
+
+					const animations = gltf.animations;
+					mixer = new THREE.AnimationMixer( model );
+
+					numAnimations = animations.length;
+
+					for ( let i = 0; i !== numAnimations; ++ i ) {
+
+						let clip = animations[ i ];
+						const name = clip.name;
+
+						if ( baseActions[ name ] ) {
+
+							const action = mixer.clipAction( clip );
+							activateAction( action );
+							baseActions[ name ].action = action;
+							allActions.push( action );
+
+						} else if ( additiveActions[ name ] ) {
+
+							// Make the clip additive and remove the reference frame
+
+							THREE.AnimationUtils.makeClipAdditive( clip );
+
+							if ( clip.name.endsWith( '_pose' ) ) {
+
+								clip = THREE.AnimationUtils.subclip( clip, clip.name, 2, 3, 30 );
+
+							}
+
+							const action = mixer.clipAction( clip );
+							activateAction( action );
+							additiveActions[ name ].action = action;
+							allActions.push( action );
+
+						}
+
+					}
+
+					createPanel();
+
+					animate();
+
+				} );
+
+				renderer = new THREE.WebGLRenderer( { antialias: true } );
+				renderer.setPixelRatio( window.devicePixelRatio );
+				renderer.setSize( window.innerWidth, window.innerHeight );
+				renderer.outputEncoding = THREE.sRGBEncoding;
+				renderer.shadowMap.enabled = true;
+				container.appendChild( renderer.domElement );
+
+				// camera
+				camera = new THREE.PerspectiveCamera( 45, window.innerWidth / window.innerHeight, 1, 100 );
+				camera.position.set( - 1, 2, 3 );
+
+				const controls = new OrbitControls( camera, renderer.domElement );
+				controls.enablePan = false;
+				controls.enableZoom = false;
+				controls.target.set( 0, 1, 0 );
+				controls.update();
+
+				stats = new Stats();
+				container.appendChild( stats.dom );
+
+				window.addEventListener( 'resize', onWindowResize );
+
+			}
+
+			function createPanel() {
+
+				const panel = new GUI( { width: 310 } );
+
+				const folder1 = panel.addFolder( 'Base Actions' );
+				const folder2 = panel.addFolder( 'Additive Action Weights' );
+				const folder3 = panel.addFolder( 'General Speed' );
+
+				panelSettings = {
+					'modify time scale': 1.0
+				};
+
+				const baseNames = [ 'None', ...Object.keys( baseActions ) ];
+
+				for ( let i = 0, l = baseNames.length; i !== l; ++ i ) {
+
+					const name = baseNames[ i ];
+					const settings = baseActions[ name ];
+					panelSettings[ name ] = function () {
+
+						const currentSettings = baseActions[ currentBaseAction ];
+						const currentAction = currentSettings ? currentSettings.action : null;
+						const action = settings ? settings.action : null;
+
+						if ( currentAction !== action ) { 
+						
+							prepareCrossFade( currentAction, action, 0.35 );
+						
+						}
+
+					};
+
+					crossFadeControls.push( folder1.add( panelSettings, name ) );
+
+				}
+
+				for ( const name of Object.keys( additiveActions ) ) {
+
+					const settings = additiveActions[ name ];
+
+					panelSettings[ name ] = settings.weight;
+					folder2.add( panelSettings, name, 0.0, 1.0, 0.01 ).listen().onChange( function ( weight ) {
+
+						setWeight( settings.action, weight );
+						settings.weight = weight;
+
+					} );
+
+				}
+
+				folder3.add( panelSettings, 'modify time scale', 0.0, 1.5, 0.01 ).onChange( modifyTimeScale );
+
+				folder1.open();
+				folder2.open();
+				folder3.open();
+
+				crossFadeControls.forEach( function ( control ) {
+
+					control.setInactive = function () {
+
+						control.domElement.classList.add( 'control-inactive' );
+
+					};
+
+					control.setActive = function () {
+
+						control.domElement.classList.remove( 'control-inactive' );
+
+					};
+
+					const settings = baseActions[ control.property ];
+
+					if ( ! settings || ! settings.weight ) {
+
+						control.setInactive();
+
+					}
+
+				} );
+
+			}
+
+			function activateAction( action ) {
+
+				const clip = action.getClip();
+				const settings = baseActions[ clip.name ] || additiveActions[ clip.name ];
+				setWeight( action, settings.weight );
+				action.play();
+
+			}
+
+			function modifyTimeScale( speed ) {
+
+				mixer.timeScale = speed;
+
+			}
+
+			function prepareCrossFade( startAction, endAction, duration ) {
+
+				// If the current action is 'idle', execute the crossfade immediately;
+				// else wait until the current action has finished its current loop
+
+				if ( currentBaseAction === 'idle' || ! startAction || ! endAction ) {
+
+					executeCrossFade( startAction, endAction, duration );
+
+				} else {
+
+					synchronizeCrossFade( startAction, endAction, duration );
+
+				}
+
+				// Update control colors
+
+				if ( endAction ) {
+
+					const clip = endAction.getClip();
+					currentBaseAction = clip.name;
+
+				} else {
+
+					currentBaseAction = 'None';
+
+				}
+
+				crossFadeControls.forEach( function ( control ) {
+
+					const name = control.property;
+
+					if ( name === currentBaseAction ) {
+
+						control.setActive();
+
+					} else {
+
+						control.setInactive();
+
+					}
+
+				} );
+
+			}
+
+			function synchronizeCrossFade( startAction, endAction, duration ) {
+
+				mixer.addEventListener( 'loop', onLoopFinished );
+
+				function onLoopFinished( event ) {
+
+					if ( event.action === startAction ) {
+
+						mixer.removeEventListener( 'loop', onLoopFinished );
+
+						executeCrossFade( startAction, endAction, duration );
+
+					}
+
+				}
+
+			}
+
+			function executeCrossFade( startAction, endAction, duration ) {
+
+				// Not only the start action, but also the end action must get a weight of 1 before fading
+				// (concerning the start action this is already guaranteed in this place)
+
+				if ( endAction ) {
+
+					setWeight( endAction, 1 );
+					endAction.time = 0;
+
+					if ( startAction ) {
+
+						// Crossfade with warping
+
+						startAction.crossFadeTo( endAction, duration, true );
+
+					} else {
+
+						// Fade in
+
+						endAction.fadeIn( duration );
+
+					}
+
+				} else {
+
+					// Fade out
+
+					startAction.fadeOut( duration );
+
+				}
+
+			}
+
+			// This function is needed, since animationAction.crossFadeTo() disables its start action and sets
+			// the start action's timeScale to ((start animation's duration) / (end animation's duration))
+
+			function setWeight( action, weight ) {
+
+				action.enabled = true;
+				action.setEffectiveTimeScale( 1 );
+				action.setEffectiveWeight( weight );
+
+			}
+
+			function onWindowResize() {
+
+				camera.aspect = window.innerWidth / window.innerHeight;
+				camera.updateProjectionMatrix();
+
+				renderer.setSize( window.innerWidth, window.innerHeight );
+
+			}
+
+			function animate() {
+
+				// Render loop
+
+				requestAnimationFrame( animate );
+
+				for ( let i = 0; i !== numAnimations; ++ i ) {
+
+					const action = allActions[ i ];
+					const clip = action.getClip();
+					const settings = baseActions[ clip.name ] || additiveActions[ clip.name ];
+					settings.weight = action.getEffectiveWeight();
+
+				}
+
+				// Get the time elapsed since the last frame, used for mixer update
+
+				const mixerUpdateDelta = clock.getDelta();
+
+				// Update the animation mixer, the stats panel, and render this frame
+
+				mixer.update( mixerUpdateDelta );
+
+				stats.update();
+
+				renderer.render( scene, camera );
+
+			}
+
+		</script>
+
+	
+
+<div class="lil-gui allow-touch-styles root autoPlace" style="--width:310px;"><div class="title" role="button" aria-expanded="true" tabindex="0">Controls</div><div class="children"><div class="lil-gui allow-touch-styles"><div class="title" role="button" aria-expanded="true" tabindex="0">Base Actions</div><div class="children"><div class="controller function control-inactive"><div class="widget"><button><div class="name" id="lil-gui-name-1">None</div></button></div></div><div class="controller function"><div class="widget"><button><div class="name" id="lil-gui-name-2">idle</div></button></div></div><div class="controller function control-inactive"><div class="widget"><button><div class="name" id="lil-gui-name-3">walk</div></button></div></div><div class="controller function control-inactive"><div class="widget"><button><div class="name" id="lil-gui-name-4">run</div></button></div></div></div></div><div class="lil-gui allow-touch-styles"><div class="title" role="button" aria-expanded="true" tabindex="0">Additive Action Weights</div><div class="children"><div class="controller number hasSlider"><div class="name" id="lil-gui-name-5">sneak_pose</div><div class="widget"><div class="slider"><div class="fill" style="width: 0%;"></div></div><input type="number" step="any" aria-labelledby="lil-gui-name-5"></div></div><div class="controller number hasSlider"><div class="name" id="lil-gui-name-6">sad_pose</div><div class="widget"><div class="slider"><div class="fill" style="width: 0%;"></div></div><input type="number" step="any" aria-labelledby="lil-gui-name-6"></div></div><div class="controller number hasSlider"><div class="name" id="lil-gui-name-7">agree</div><div class="widget"><div class="slider"><div class="fill" style="width: 0%;"></div></div><input type="number" step="any" aria-labelledby="lil-gui-name-7"></div></div><div class="controller number hasSlider"><div class="name" id="lil-gui-name-8">headShake</div><div class="widget"><div class="slider"><div class="fill" style="width: 0%;"></div></div><input type="number" step="any" aria-labelledby="lil-gui-name-8"></div></div></div></div><div class="lil-gui allow-touch-styles"><div class="title" role="button" aria-expanded="true" tabindex="0">General Speed</div><div class="children"><div class="controller number hasSlider"><div class="name" id="lil-gui-name-9">modify time scale</div><div class="widget"><div class="slider"><div class="fill" style="width: 66.6667%;"></div></div><input type="number" step="any" aria-labelledby="lil-gui-name-9"></div></div></div></div></div></div><span style="margin: 0px auto; border: 2px dotted rgb(0, 0, 0); position: absolute; z-index: 2147483647; visibility: hidden; left: 1390px; width: 0px; top: 77px; height: 0px;"></span><span style="z-index: 2147483647; position: absolute; visibility: hidden; left: 1375px; width: 50px; top: 62px; height: 20px; font-size: 10px; color: black;"></span></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>
