@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sarcastobot — Seq2Seq Chatbot with TensorFlow.js</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="dist/main.css">
+    <script src="dist/bundle.js"></script>
+</head>
+<body>
+  <header class="header">
+    <h1>Sarcastobot</h1>
+    <p>A mean, grumpy sarcastic chatbot.</p>
+    <a href="https://github.com/Machine-Learning-Tokyo/seq2seq_bot" target="_blank" title="GitHub repository" class="header__github-link">
+      <img src="resources/github.png" alt="GitHub"></a>
+  </header>
+  <main>
+    <section class="chat">
+      <div class="conversation" id="conversation">
+        <h2 class="conversation__heading">
+          <span class="conversation__heading__text--loading">Loading Seq2Seq model. This may take a while..</span>
+          <span class="conversation__heading__text--ready">Say Hi.</span>
+        </h2>
+      </div>
+      <div class="chat__input">
+        <div class="input-window">
+          <input type="text" class="input-window__text" id="input-text" disabled placeholder="Loading...">
+          <div class="input-window__temp">
+            <label for="temperature">Temperature: <span class="input-window__temp__val" id="temperature-display"></span></label>
+            <input type="range" class="input-window__range" name="temperature" id="slider-range" min="0" max="1" step="0.01">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>Sarcastobot runs a Seq2Seq model in the browser using <a href="https://js.tensorflow.org/" target="_blank">TensorFlow.js</a>.
+    The code is <a href="https://github.com/Machine-Learning-Tokyo/seq2seq_bot" target="_blank">open source</a>.</p>
+  </footer>
+</body>
+</html>
