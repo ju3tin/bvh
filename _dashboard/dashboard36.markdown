@@ -1,5 +1,5 @@
 ---
-layout: dashboard37
+layout: dashboard67
 title: Ui Progressbar
 permalink: /dashboard/ui-progressbar.html
 linknum: 2

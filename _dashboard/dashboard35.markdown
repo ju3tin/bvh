@@ -1,5 +1,5 @@
 ---
-layout: dashboard36
+layout: dashboard37
 title: Ui Popover
 permalink: /dashboard/ui-popover.html
 linknum: 2
