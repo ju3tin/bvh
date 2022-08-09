@@ -1,5 +1,5 @@
 ---
-layout: dashboard35
+layout: dashboard36
 title: Ui Dropdown
 permalink: /dashboard/ui-dropdown.html
 linknum: 2
