@@ -1,6 +1,6 @@
 ---
 layout: dashboard65
-title: Workout Plan
+title: Demo1
 permalink: /dashboard/demo1.html
 linknum: 2
 linkchad: 2
